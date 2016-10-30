@@ -1,0 +1,26 @@
+{
+  "name": "burgersmvcapp",
+  "version": "1.0.0",
+  "description": "An MVC app that will log burgers eaten / not eaten in a database and adjust based on user requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seeksort/BurgersMVCApp.git"
+  },
+  "author": "seeksort",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seeksort/BurgersMVCApp/issues"
+  },
+  "homepage": "https://github.com/seeksort/BurgersMVCApp#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.11.1"
+  }
+}
