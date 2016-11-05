@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eat The Burger</title>
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Merriweather+Sans:700" rel="stylesheet">
+    <!--Regular Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="assets/css/burger_style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Title, Pic, Form -->
+        <div class="row">
+            <!-- Title -->
+            <div class="col-sm-12 col-md-4">
+                <h1 id="title">Happy <br>&nbsp;&nbsp;&nbsp;Burger <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Funtime</h1>
+            </div>
+            <!-- Pic -->
+            <div class="col-sm-12 col-md-4">
+                <img src="assets/img/burger_fries.png" class="img img-responsive" id="burgerPic">
+            </div>
+            <!-- Instructions & Form -->
+            <div class="col-sm-12 col-md-4 text-right">
+                <h2>Select from the menu</h2><h2>or enter a new nom nom!</h2>
+                <!-- Form -->
+                <form action="burgers/create" method="POST">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="newBurger" name="burger_name" placeholder="Type here...">
+                  </div>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Burgers -->
+        <div class="row">
+            
+            {{{ body }}}
+        
+        </div>
+
+    </div>
+
+    <footer class="text-center">
+        <div class="container">
+            <p><a href="https://github.com/seeksort/BurgersMVCApp">GitHub Repo</a> | 
+            Image: <a href="http://www.zazzle.com/rustydoodle">Rusty Doodle</a></p>
+        </div>
+    </footer>
+
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+    <!--JavaScript-->
+    <script type="text/javascript"></script>
+</body>
+</html>

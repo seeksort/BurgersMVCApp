@@ -1,0 +1,29 @@
+<!-- Burgers Available -->
+<div class="col-md-6">
+    <h3>Available Burgers</h3>
+    {{#each burgers}}
+        {{#unless this.devoured}}
+            <div class="well">
+                <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+                {{this.burger_name}}<!--
+                    --><input type="hidden" name="devoured" value="true">
+                    <button type="submit">Eat!</button>
+                </form>
+            </div>
+        {{/unless}}
+    {{/each}}
+</div>
+<!-- Burgers Eaten -->
+<div class="col-md-6">
+    <h3>Burgers Eaten</h3>
+    {{#each burgers}}
+        {{#if this.devoured}}
+            <div class="well">
+                <form action="burgers/update/{{this.id}}?_method=PUT" method="POST">
+                {{this.burger_name}}<!--
+                    --><input type="hidden" name="devoured" value="false">
+                </form>
+            </div>
+        {{/if}}
+    {{/each}}
+</div>
